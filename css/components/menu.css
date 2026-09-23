@@ -249,4 +249,19 @@
   .nav-menu__hamburger-icon::after {
     bottom: -6px;
   }
+  .header {
+  position: relative;
+}
+.nav-menu {
+  position: static;
+}
+.nav-menu:has(.nav-menu__toggle[aria-expanded="true"]) {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.nav-menu__toggle[aria-expanded="true"] + .nav-menu__list {
+  position: static;
+  width: 100%;
+}
 }
