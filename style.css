@@ -124,3 +124,83 @@ body {
   color: #ffffff;
   border-color: #000000;
 }
+/* Barre d'outils */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 0.6rem 0;
+  margin-bottom: 1.5rem;
+}
+.filter-toggle {
+  background: none;
+  border: none;
+  font-size: 0.65rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #111111;
+}
+.sort-box {
+  font-size: 0.65rem;
+  color: #555555;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sort-box select {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.65rem;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+
+/* Grille et Sidebar */
+.catalog-layout {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 2rem;
+}
+.catalog-layout.filters-hidden {
+  grid-template-columns: 1fr;
+}
+.catalog-layout.filters-hidden .sidebar-filters {
+  display: none;
+}
+
+/* Barre latérale des filtres */
+.sidebar-filters {
+  display: flex;
+  flex-direction: column;
+}
+.filter-group {
+  margin-bottom: 1.2rem;
+}
+.filter-header {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.filter-options label {
+  font-size: 0.7rem;
+  color: #444444;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.filter-options input[type="checkbox"] {
+  width: 12px;
+  height: 12px;
+  accent-color: #000000;
+}
