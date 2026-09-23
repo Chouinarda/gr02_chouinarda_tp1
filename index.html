@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOULÉE - Chaussures</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- En-tête principal -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">FOULÉE</a>
+
+      <nav class="header__nav">
+        <a href="#">HOMMES</a>
+        <a href="#">FEMMES</a>
+        <a href="#">ENFANTS</a>
+        <a href="#">SPORT</a>
+        <a href="#">PERSONNALISER</a>
+        <a href="#">FOULÉE +</a>
+      </nav>
+
+      <div class="header__right">
+        <div class="search-box">
+          <input type="text" placeholder="Rechercher">
+        </div>
+        <a href="#" class="cart-icon" aria-label="Panier">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenu de la page -->
+  <main class="main-content">
+
+    <!-- Fil d'Ariane -->
+    <nav class="breadcrumb">
+      <a href="#">Accueil</a>
+      <span>&gt;</span>
+      <span class="current">Chaussures</span>
+    </nav>
+
+    <h1 class="page-title">CHAUSSURES</h1>
+    <div class="product-count">12 produits</div>
+
+    <!-- Onglets principaux -->
+    <div class="gender-tabs">
+      <button class="tab-btn active">TOUS</button>
+      <button class="tab-btn">HOMMES</button>
+      <button class="tab-btn">FEMMES</button>
+      <button class="tab-btn">ENFANTS</button>
+    </div>
+
+    <!-- Barre d'outils -->
+    <div class="toolbar">
+      <button class="filter-toggle" id="toggleFilters">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <span>MASQUER LES FILTRES</span>
+      </button>
+
+      <div class="sort-box">
+        <label for="sort-select">Trier par</label>
+        <select id="sort-select">
+          <option>Nouveautés</option>
+          <option>Prix croissant</option>
+          <option>Prix décroissant</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Disposition du Catalogue -->
+    <div class="catalog-layout" id="catalogLayout">
+
+      <!-- Filtres à gauche -->
+      <aside class="sidebar-filters">
+
+        <div class="filter-group">
+          <div class="filter-header">SPORT</div>
+          <div class="filter-options">
+            <label><input type="checkbox"> Course</label>
+            <label><input type="checkbox"> Basketball</label>
+            <label><input type="checkbox"> Football</label>
+            <label><input type="checkbox"> Training</label>
+            <label><input type="checkbox"> Lifestyle</label>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-header">PRIX</div>
+          <div class="filter-options">
+            <label><input type="checkbox"> Moins de 80 $</label>
+            <label><input type="checkbox"> 80 $ - 120 $</label>
+            <label><input type="checkbox"> 120 $ - 180 $</label>
+            <label><input type="checkbox"> Plus de 180 $</label>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-header">COULEUR</div>
+          <div class="filter-options">
+            <label><input type="checkbox"> Blanc</label>
+            <label><input type="checkbox"> Noir</label>
+            <label><input type="checkbox"> Rouge</label>
+            <label><input type="checkbox"> Bleu</label>
+            <label><input type="checkbox"> Jaune</label>
+            <label><input type="checkbox"> Gris</label>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-header">POINTURE</div>
+          <div class="filter-options">
+            <label><input type="checkbox"> 36</label>
+            <label><input type="checkbox"> 37</label>
+            <label><input type="checkbox"> 38</label>
+            <label><input type="checkbox"> 39</label>
+            <label><input type="checkbox"> 40</label>
+            <label><input type="checkbox"> 41</label>
+            <label><input type="checkbox"> 42</label>
+            <label><input type="checkbox"> 43</label>
+            <label><input type="checkbox"> 44</label>
+            <label><input type="checkbox"> 45</label>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- Grille de produits -->
+      <section class="products-grid">
+
+        <!-- Ligne 1 -->
+        <!-- Produit 1 -->
+        <article class="product-card">
+          <span class="badge-new">NOUVEAU</span>
+          <div class="product-image-wrap">
+            <img src="images/520px/men_AirVortex01_w520.jpg" alt="AIR VORTEX">
+          </div>
+          <div class="product-info-box">
+            <span class="product-gender">HOMMES</span>
+            <h2 class="product-title">AIR VORTEX</h2>
+            <div class="product-colors">2 couleurs</div>
+            <div class="product-price">$99,99</div>
+            <button type="button" class="btn-add">AJOUTER AU PANIER</button>
+          </div>
+        </article>
+
+        <!-- Produit 2 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/520px/men_AirForceLow_01_w520.jpg" alt="AIR FORCE MID LEATHER">
+          </div>
+          <div class="product-info-box">
+            <span class="product-gender">FEMMES</span>
+            <h2 class="product-title">AIR FORCE MID LEATHER</h2>
+            <div class="product-colors">4 couleurs</div>
+            <div class="product-price">$109,99</div>
+            <button type="button" class="btn-add">AJOUTER AU PANIER</button>
+          </div>
+        </article>
+
+        <!-- Produit 3 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/520px/men_AirJordanMid_01_w520.jpg" alt="AIR JORDAN RETRO DECON">
+          </div>
+          <div class="product-info-box">
+            <span class="product-gender">HOMMES</span>
+            <h2 class="product-title">AIR JORDAN RETRO DECON</h2>
+            <div class="product-colors">5 couleurs</div>
+            <div class="product-price">$189,99</div>
+            <button type="button" class="btn-add">AJOUTER AU PANIER</button>
+          </div>
+        </article>
+
+        <!-- Ligne 2 -->
+        <!-- Produit 4 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/520px/men_AirForceFlynit_01_w520.jpg" alt="AIR FORCE FLYKNIT">
+          </div>
+          <div class="product-info-box">
+            <span class="product-gender">HOMMES</span>
+            <h2 class="product-title">AIR FORCE FLYKNIT</h2>
+            <div class="product-colors">3 couleurs</div>
+            <div class="product-price">$129,99</div>
+            <button type="button" class="btn-add">AJOUTER AU PANIER</button>
+          </div>
+        </article>
+
+        <!-- Produit 5 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/520px/men_CourtBoroughLow_01_w520.jpg" alt="COURT BOROUGH MID">
+          </div>
+          <div class="product-info-box">
+            <span class="product-gender">HOMMES</span>
+            <h2 class="product-title">COURT BOROUGH MID</h2>
+            <div class="product-colors">4 couleurs</div>
+            <div class="product-price">$79,99</div>
+            <button type="button" class="btn-add">AJOUTER AU PANIER</button>
+          </div>
+        </article>
+
+        <!-- Produit 6 -->
+        <article class="product-card">
+          <span class="badge-new">NOUVEAU</span>
+          <div class="product-image-wrap">
+            <img src="images/520px/men_ClassicCortezNylon_01_w520.jpg" alt="CLASSIC CORTEZ NYLON B">
+          </div>
+          <div class="product-info-box">
+            <span class="product-gender">FEMMES</span>
+            <h2 class="product-title">CLASSIC CORTEZ NYLON B</h2>
+            <div class="product-colors">2 couleurs</div>
+            <div class="product-price">$89,99</div>
+            <button type="button" class="btn-add">AJOUTER AU PANIER</button>
+          </div>
+        </article>
+
+        <!-- Ligne 3 -->
+        <!-- Produit 7 -->
+        <article class="product-card">
+          <span class="badge-new">NOUVEAU</span>
+          <div class="product-image-wrap">
+            <img src="images/520px/men_AirMaxUltraMoire_01_w520.jpg" alt="AIR MAX ULTRA MOIRE">
+          </div>
+          <div class="product-info-box">
+            <span class="product-gender">HOMMES</span>
+            <h2 class="product-title">AIR MAX ULTRA MOIRE</h2>
+            <div class="product-colors">4 couleurs</div>
+            <div class="product-price">$149,99</div>
+            <button type="button" class="btn-add">AJOUTER AU PANIER</button>
+          </div>
+        </article>
+
+        <!-- Produit 8 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/520px/men_AllCourtLow_01_w520.jpg" alt="BLAZER LOW LX">
+          </div>
+          <div class="product-info-box">
+            <span class="product-gender">FEMMES</span>
+            <h2 class="product-title">BLAZER LOW LX</h2>
+            <div class="product-colors">3 couleurs</div>
+            <div class="product-price">$109,99</div>
+            <button type="button" class="btn-add">AJOUTER AU PANIER</button>
+          </div>
+        </article>
+
+        <!-- Produit 9 -->
+        <article class="product-card">
+          <span class="badge-new">NOUVEAU</span>
+          <div class="product-image-wrap">
+            <img src="images/520px/men_AirMaxSc_01_w520.jpg" alt="AIR MAX ZERO">
+          </div>
+          <div class="product-info-box">
+            <span class="product-gender">FEMMES</span>
+            <h2 class="product-title">AIR MAX ZERO</h2>
+            <div class="product-colors">3 couleurs</div>
+            <div class="product-price">$119,99</div>
+            <button type="button" class="btn-add">AJOUTER AU PANIER</button>
+          </div>
+        </article>
+
+        <!-- Ligne 4 -->
+        <!-- Produit 10 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/520px/men_CortezUltraMoire_01_w520.jpg" alt="CORTEZ ULTRA MOIRE">
+          </div>
+          <div class="product-info-box">
+            <span class="product-gender">HOMMES</span>
+            <h2 class="product-title">CORTEZ ULTRA MOIRE</h2>
+            <div class="product-colors">5 couleurs</div>
+            <div class="product-price">$99,99</div>
+            <button type="button" class="btn-add">AJOUTER AU PANIER</button>
+          </div>
+        </article>
+
+        <!-- Produit 11 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/520px/men_AirForceUltraForce_01_w520.jpg" alt="FLEX SUPREME TR 5B">
+          </div>
+          <div class="product-info-box">
+            <span class="product-gender">FEMMES</span>
+            <h2 class="product-title">FLEX SUPREME TR 5B</h2>
+            <div class="product-colors">2 couleurs</div>
+            <div class="product-price">$89,99</div>
+            <button type="button" class="btn-add">AJOUTER AU PANIER</button>
+          </div>
+        </article>
+
+        <!-- Produit 12 -->
+        <article class="product-card">
+          <span class="badge-new">NOUVEAU</span>
+          <div class="product-image-wrap">
+            <img src="images/520px/men_AirJordanRetroDecon_01_w520.jpg" alt="LUNAR CHARGE ESSENTIAL">
+          </div>
+          <div class="product-info-box">
+            <span class="product-gender">FEMMES</span>
+            <h2 class="product-title">LUNAR CHARGE ESSENTIAL</h2>
+            <div class="product-colors">4 couleurs</div>
+            <div class="product-price">$109,99</div>
+            <button type="button" class="btn-add">AJOUTER AU PANIER</button>
+          </div>
+        </article>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__col main-col">
+        <div class="footer__logo">FOULÉE</div>
+        <p class="footer__text">
+          © 2017 FOULÉE.<br>
+          Tous droits réservés. 2017.
+        </p>
+      </div>
+
+      <div class="footer__col center-col">
+        <div class="footer__links">
+          <a href="#">ACCUEIL</a>
+          <a href="#">À PROPOS</a>
+          <a href="#">SUPPORT</a>
+          <a href="#">CONTACT</a>
+        </div>
+        <p class="footer__description">
+          FOULÉE est une boutique spécialisée dans la vente de chaussures de sport et de lifestyle. Nous offrons une sélection soigneusement choisie pour hommes, femmes et enfants.
+        </p>
+      </div>
+
+      <div class="footer__col social-col">
+        <div class="social-icons">
+          <a href="#" aria-label="X / Twitter">𝕏</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Pinterest">P</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
