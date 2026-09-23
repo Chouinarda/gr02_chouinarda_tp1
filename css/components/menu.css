@@ -4,8 +4,8 @@
   /* 1. ARCHITECTURE DESKTOP */
   .nav-menu {
     --nav-bg: #050505;
-    --nav-text: #020263;
-    --nav-accent: #0066cc;
+    --nav-text: #f2f2f2;
+    --nav-accent: #fcfeff;
     --nav-focus-ring: #ffbf00;
 
     display: flex;
