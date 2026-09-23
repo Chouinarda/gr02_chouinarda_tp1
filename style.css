@@ -65,3 +65,62 @@ body {
   display: flex;
   align-items: center;
 }
+/* Conteneur principal */
+.main-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+/* Fil d'Ariane */
+.breadcrumb {
+  font-size: 0.65rem;
+  color: #777777;
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 0.3rem;
+}
+.breadcrumb a {
+  color: #777777;
+  text-decoration: none;
+}
+.breadcrumb .current {
+  color: #111111;
+}
+
+/* Titre et compte */
+.page-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.1rem;
+}
+.product-count {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 1.2rem;
+}
+
+/* Onglets TOUS / HOMMES / FEMMES / ENFANTS */
+.gender-tabs {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+.tab-btn {
+  padding: 0.4rem 1.2rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+.tab-btn.active {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
