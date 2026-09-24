@@ -9,29 +9,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="js/menu.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- En-tête principal -->
   <header class="header">
     <div class="header__inner">
       <a href="#" class="header__logo">FOULÉE</a>
 
       <nav class="nav-menu" aria-label="Navigation principale">
-        <!-- Bouton Menu / Fermer -->
         <button
           class="nav-menu__toggle"
           aria-expanded="false"
           aria-controls="nav-menu-list"
           aria-label="Ouvrir le menu de navigation"
         >
-          <!-- L'icône doit être positionnée en premier pour le sélecteur CSS adjacent (+) -->
           <span class="nav-menu__hamburger-icon" aria-hidden="true"></span>
           <span class="nav-menu__libelle">Menu</span>
         </button>
 
-        <!-- Liste des liens de navigation -->
         <ul id="nav-menu-list" class="nav-menu__list">
           <li class="nav-menu__item">
             <a href="#home" class="nav-menu__link">Accueil</a>
@@ -63,10 +58,8 @@
     </div>
   </header>
 
-  <!-- Contenu de la page -->
   <main class="main-content">
 
-    <!-- Fil d'Ariane -->
     <nav class="breadcrumb">
       <a href="#">Accueil</a>
       <span>&gt;</span>
@@ -76,7 +69,6 @@
     <h1 class="page-title">CHAUSSURES</h1>
     <div class="product-count">12 produits</div>
 
-    <!-- Onglets principaux -->
     <div class="gender-tabs">
       <button class="tab-btn active">TOUS</button>
       <button class="tab-btn">HOMMES</button>
@@ -84,7 +76,6 @@
       <button class="tab-btn">ENFANTS</button>
     </div>
 
-    <!-- Barre d'outils -->
     <div class="toolbar">
       <button class="filter-toggle" id="toggleFilters">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -105,10 +96,8 @@
       </div>
     </div>
 
-    <!-- Disposition du Catalogue -->
     <div class="catalog-layout" id="catalogLayout">
 
-      <!-- Filtres à gauche -->
       <aside class="sidebar-filters">
 
         <div class="filter-group">
@@ -162,11 +151,8 @@
 
       </aside>
 
-      <!-- Grille de produits -->
       <section class="products-grid">
 
-        <!-- Ligne 1 -->
-        <!-- Produit 1 -->
         <article class="product-card">
           <span class="badge-new">NOUVEAU</span>
           <div class="product-image-wrap">
@@ -181,7 +167,6 @@
           </div>
         </article>
 
-        <!-- Produit 2 -->
         <article class="product-card">
           <div class="product-image-wrap">
             <img src="images/520px/men_AirForceLow_01_w520.jpg" alt="AIR FORCE MID LEATHER">
@@ -195,7 +180,6 @@
           </div>
         </article>
 
-        <!-- Produit 3 -->
         <article class="product-card">
           <div class="product-image-wrap">
             <img src="images/520px/men_AirJordanMid_01_w520.jpg" alt="AIR JORDAN RETRO DECON">
@@ -209,8 +193,6 @@
           </div>
         </article>
 
-        <!-- Ligne 2 -->
-        <!-- Produit 4 -->
         <article class="product-card">
           <div class="product-image-wrap">
             <img src="images/520px/men_AirForceFlynit_01_w520.jpg" alt="AIR FORCE FLYKNIT">
@@ -224,7 +206,6 @@
           </div>
         </article>
 
-        <!-- Produit 5 -->
         <article class="product-card">
           <div class="product-image-wrap">
             <img src="images/520px/men_CourtBoroughLow_01_w520.jpg" alt="COURT BOROUGH MID">
@@ -238,7 +219,6 @@
           </div>
         </article>
 
-        <!-- Produit 6 -->
         <article class="product-card">
           <span class="badge-new">NOUVEAU</span>
           <div class="product-image-wrap">
@@ -253,8 +233,6 @@
           </div>
         </article>
 
-        <!-- Ligne 3 -->
-        <!-- Produit 7 -->
         <article class="product-card">
           <span class="badge-new">NOUVEAU</span>
           <div class="product-image-wrap">
@@ -269,7 +247,6 @@
           </div>
         </article>
 
-        <!-- Produit 8 -->
         <article class="product-card">
           <div class="product-image-wrap">
             <img src="images/520px/men_AllCourtLow_01_w520.jpg" alt="BLAZER LOW LX">
@@ -283,7 +260,6 @@
           </div>
         </article>
 
-        <!-- Produit 9 -->
         <article class="product-card">
           <span class="badge-new">NOUVEAU</span>
           <div class="product-image-wrap">
@@ -298,8 +274,6 @@
           </div>
         </article>
 
-        <!-- Ligne 4 -->
-        <!-- Produit 10 -->
         <article class="product-card">
           <div class="product-image-wrap">
             <img src="images/520px/men_CortezUltraMoire_01_w520.jpg" alt="CORTEZ ULTRA MOIRE">
@@ -313,7 +287,6 @@
           </div>
         </article>
 
-        <!-- Produit 11 -->
         <article class="product-card">
           <div class="product-image-wrap">
             <img src="images/520px/men_AirForceUltraForce_01_w520.jpg" alt="FLEX SUPREME TR 5B">
@@ -327,7 +300,6 @@
           </div>
         </article>
 
-        <!-- Produit 12 -->
         <article class="product-card">
           <span class="badge-new">NOUVEAU</span>
           <div class="product-image-wrap">
@@ -348,7 +320,6 @@
 
   </main>
 
-  <!-- Pied de page -->
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__col main-col">
